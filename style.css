@@ -1,4 +1,4 @@
-/*=====================================*/
+/*===========Colors====================*/
 :root{
     --White: hsl(0, 0%, 100%);
     --Stone-100: hsl(30, 54%, 90%);
@@ -8,10 +8,9 @@
     --Brown-800: hsl(14, 45%, 36%);
     --Rose-800: hsl(332, 51%, 32%);
     --Rose-50: hsl(330, 100%, 98%);
-    --Font: hsl(0, 55%, 41%);
 }
 
-/*=====================================*/
+/*============Fonts====================*/
 
 @font-face {
     font-family: "Young Serif";
@@ -37,7 +36,7 @@
     font-weight: 700;
 }
 
-/*=====================================*/
+/*==========Main=======================*/
 
 *{
     box-sizing: border-box;
@@ -52,6 +51,18 @@ body{
     justify-content: center ;
 }
 
+hr{
+    display: none;
+    border: none;
+    height: 2px;
+    background-color: var(--Stone-150);
+    width: 90%;
+    margin: 0px auto;
+    opacity: 0.5;
+}
+
+/*===========Section===================*/
+
 .container{
     background-color: var(--White);
     width: 100%;
@@ -60,6 +71,8 @@ body{
     padding: 40px;
     border-radius: 20px;
 }
+
+/*==========Section Title==============*/
 
 .omeletteImg{
     width: 100%;
@@ -81,7 +94,9 @@ body{
     font-size: 1.1em;
 }
 
-.Preparation-time{
+/*===========Preparation===============*/
+
+.preparation-time{
     margin: 50px 0px 30px 30px;
 }
 .time-title{
@@ -111,35 +126,9 @@ body{
     font-size: 0.8em;
 }
 
-.Instructions-title{
-    color: var(--Brown-800);
-    font-size: 1.8em;
-    font-family: "Young Serif";
-    font-weight: 400;
-    margin: 30px 0px 20px 0px;
-}
+/*=========Ingredients=================*/
 
-.Instruction-list {
-    list-style-position: outside;
-    padding-left: 20px;
-    margin-bottom: 30px;
-}
-
-.Instruction-list li {
-    font-family: "Outfit";
-    color: var(--Stone-600);
-    font-weight: 400;
-    padding-left: 20px;
-    margin: 12px 0;
-    font-size: 1.05em;
-}
-
-.Instruction-list li::marker{
-    color: var(--Rose-800);
-    font-size: 0.8em;
-}
-
-.Ingredients-title{
+.ingredients-title{
     color: var(--Brown-800);
     font-size: 1.8em;
     font-family: "Young Serif";
@@ -147,13 +136,13 @@ body{
     margin: 60px 0px 20px 0px;
 }
 
-.Ingridient-List {
+.ingridient-list {
     list-style-position: outside;
     padding-left: 20px;
     margin-bottom: 30px;
 }
 
-.Ingridient-List li {
+.ingridient-list li {
     font-family: "Outfit";
     color: var(--Stone-600);
     font-weight: 400;
@@ -162,19 +151,51 @@ body{
     font-size: 1.05em;
 }
 
-.Ingridient-List li::marker{
+.ingridient-list li::marker{
     color: var(--Rose-800);
     font-size: 0.8em;
 }
 
-.Nutrition-title{
+/*==========Instructions===============*/
+
+.instructions-title{
     color: var(--Brown-800);
     font-size: 1.8em;
     font-family: "Young Serif";
     font-weight: 400;
     margin: 30px 0px 20px 0px;
 }
-.Nutrition-description{
+
+.instruction-list {
+    list-style-position: outside;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.instruction-list li {
+    font-family: "Outfit";
+    color: var(--Stone-600);
+    font-weight: 400;
+    padding-left: 20px;
+    margin: 12px 0;
+    font-size: 1.05em;
+}
+
+.instruction-list li::marker{
+    color: var(--Rose-800);
+    font-size: 0.8em;
+}
+
+/*==========Nutrition==================*/
+
+.nutrition-title{
+    color: var(--Brown-800);
+    font-size: 1.8em;
+    font-family: "Young Serif";
+    font-weight: 400;
+    margin: 30px 0px 20px 0px;
+}
+.nutrition-description{
     font-family: "Outfit";
     font-weight: 400;
     color: var(--Stone-600);
@@ -182,16 +203,18 @@ body{
     margin-bottom: 15px;
 }
 
-.Nutrition-table {
+/*============Table====================*/
+
+.nutrition-table {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
 }
 
-.Nutrition-table tr:not(:last-child) {
+.nutrition-table tr:not(:last-child) {
     border-bottom: 1px solid var(--Stone-150);
 }
-.Nutrition-table td{
+.nutrition-table td{
     color: var(--Brown-800);
     font-family: "Outfit";
     font-weight: 600;
@@ -199,22 +222,15 @@ body{
     font-size: 1em;
 }
 
-.Nutrition-table th{
+.nutrition-table th{
     color: var(--Stone-600);
     font-family: "Outfit";
     font-weight: 400;
     padding: 10px 0px 10px 25px;
     width: 50%;
 }
-hr{
-    display: none;
-    border: none;
-    height: 2px;
-    background-color: var(--Stone-150);
-    width: 90%;
-    margin: 0px auto;
-    opacity: 0.5;
-}
+
+/*=========Phone Screen================*/
 
 @media (max-width: 800px) {
     .container {
